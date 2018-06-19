@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <img src="assets/imgs/dreamlogo.jpg" class="slide-image"/>
+      <h2 class="slide-title">
+        Welcome <b>DayDreamers</b>
+      </h2>
+      <p>
+        The <b>DayDreamers app</b> is a world of imagination on top of your existing boring world.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/shark.jpg" class="slide-image"/>
+      <h2 class="slide-title" >What is Daydream?</h2>
+      <p><b>Daydreaming</b> is a phenomenon where you see the objects that are not visible to your naked eye.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/dreamer.jpg" class="slide-image"/>
+      <h2 class="slide-title">Who can Daydream?</h2>
+      <p><b>Everyone</b> is a powerful daydreamer. Unleash the daydreamer in you and showcase it to your world. And let us have a peek into your day dreams too.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/daydream_logo.jpg" class="slide-image"/>
+      <h2 class="slide-title">Ready to Daydream?</h2>
+      <button ion-button icon-end large clear (click)="startApp()">
+        Start DayDreaming
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

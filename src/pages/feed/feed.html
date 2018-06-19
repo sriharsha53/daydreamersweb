@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="primary" align="middle">
+    <ion-title>My Feed
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-fab top right edge #fab1>
+        <button ion-fab mini color="secondary" (click)="uploadImage()"><ion-icon name="add"></ion-icon></button>        
+    </ion-fab>
+
+
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="https://i.pinimg.com/736x/9b/a2/57/9ba25796112cad616be27e473ae1e149--kids-cartoon-characters-childhood-characters.jpg">
+      </ion-avatar>
+      <h2>
+        <b>John Dalton</b>
+      </h2>
+      <p>November 4, 2025</p>
+    </ion-item>
+
+    <img src="https://static3.scirra.net/images/newstore/products/2738/forest_background_preview.png">
+
+    <ion-card-content>
+      <h2>
+        <b>Going green!</b>
+      </h2>
+      <p>A quotation is the repetition of one expression as part of another one, particularly when the quoted expression is
+        well-known or explicitly attributed by citation to its original source, and it is indicated by quotation marks.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>1203 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>600 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          12h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-chip color="secondary" margin>
+      <ion-label color="white">Green</ion-label>
+    </ion-chip>
+    <ion-chip color="secondary">
+      <ion-label color="white">Nature</ion-label>
+    </ion-chip>
+  </ion-card>
+</ion-content>
